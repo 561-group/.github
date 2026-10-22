@@ -25,6 +25,8 @@ services, and each step has its own organization:
 
 **Buy practical work:** Have a bounded need for research, implementation, operations or public services? [Contact the Group](https://561.group/contact/) with the desired outcome, target date and a budget range. The appropriate existing service office can qualify scope, price, capacity and terms or advise a better alternative. An inquiry is not an accepted order.
 
+**Try a real operating tool first:** [Get Causeway's free First Commission Worksheet](https://github.com/causeway-services/artificial-intelligence-curriculum-enterprise/blob/main/content/marketing/agent-operator-first-commission-workbook.md) to assign a bounded AI-agent job, handle overlapping workers, and check delivery. Teams that want guided practice can review the [existing five-session Multi-Agent Operating Discipline course](https://github.com/causeway-services/artificial-intelligence-curriculum-enterprise/blob/main/content/marketing/multi-agent-operating-discipline-for-teams.md) and [request a scoped training quote](https://561.group/contact/). Cohort dates and enrollment checkout have not been opened; the written course is an offer candidate, not a booking.
+
 - **Licensing.** A repository's own LICENSE file governs it. Indigenous cultural material is never put under an open
   license; see [Governance and Indigenous data](https://github.com/561-group/.github/blob/main/GOVERNANCE.md).
 - **Security.** Report vulnerabilities privately from a repository's **Security** tab (**Report a vulnerability**).
