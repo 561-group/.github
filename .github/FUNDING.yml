@@ -1,0 +1,5 @@
+# GitHub organization-default funding configuration.
+# Two distinct voluntary routes: direct monthly sustaining support and the existing
+# one-time tip/funding information page. Neither is a purchase of services.
+# The checkout independently declares recurrence, legal seller and cancellation.
+custom: ["https://buy.stripe.com/28E28s1b4gJcb2Y3Io5EY02", "https://github.com/561-group/.github/blob/main/TIPS.md"]
