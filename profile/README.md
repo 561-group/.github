@@ -23,6 +23,10 @@ services, and each step has its own organization:
 
 **Curious patrons and large backers:** [Underwrite open work rather than own it](https://github.com/561-group/.github/blob/main/UNDERWRITE-OPEN-WORK.md). Four source-linked scientific and technical frontiers, real prospective public outcomes, and ways to help ranging from a helpful introduction to unrestricted support or a separately agreed major sponsorship. This is not a manufactured valuation or an equity raise.
 
+## Bazaar: bring your own Shop—or say what you want to buy
+
+We're recruiting the **first two independent seller pilots** for Bazaar: real creator shops, commissioned services, digital goods, and voluntary-support pages with their original payment and customer relationships preserved. [Apply as a seller](https://github.com/causeway-services/.github/issues/new?template=bazaar-seller.yml), [submit a real buying need](https://github.com/causeway-services/.github/issues/new?template=bazaar-buyer.yml), or [read the current pilot limitations](https://github.com/causeway-services/.github/blob/main/BAZAAR.md). Applications are public, free to file, and do not create a listing, sale, contract, or transfer of merchant authority.
+
 ## Ways to participate economically
 
 **Appreciate already-published open work:** [Send a one-time tip of your own choosing](https://buy.stripe.com/9B68wQ9HA50ub2Yen25EY04) ($5–$10,000, $250 suggested). We publish real software and research before asking: [a public Lean formal-methods library](https://github.com/lenticule-science/hoare-program-carrier), [open-source storefront components](https://github.com/red-cup-engineering/digital-goods-storefront-services-section), and [this Group's source-owned Shop](https://github.com/causeway-services/shop.561.group). The legal Stripe merchant is emsenn; a tip purchases no new work, equity, influence or charitable tax deduction. [See all tipping options](https://github.com/561-group/.github/blob/main/TIPS.md).
