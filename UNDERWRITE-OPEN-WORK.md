@@ -10,6 +10,22 @@ The 561 Group is an unusual science-to-engineering-to-operations-to-public-servi
 
 Our invitation: **become the person who helped something useful and gloriously odd become real without enclosing it.**
 
+## An actual experiment: trace a claim, not a valuation
+
+**Here's something you can inspect right now.** [Red Cup's MIT-licensed proof-path structuration service](https://github.com/red-cup-engineering/proof-path-structuration-service#readme) turns an explicit series of generator witnesses into a deterministic source-relative path. When evidence doesn't earn a path, it returns an *unearned-path* refusal instead of inventing a location. You can read its source, [run its declared tests](https://github.com/red-cup-engineering/proof-path-structuration-service/blob/main/package.json), or challenge a mistaken result.
+
+This is **not** yet a general system for checking the truth of AI-generated claims, proof of a cryptographic signature, or a live source-verification website. That's what makes the next engineering job interesting.
+
+**The open-work challenge:** develop a genuinely reusable, rights-conscious demonstration in which a human or agent can submit a concrete *public* technical claim, inspect its actual source bytes and reproducible test evidence, and receive an honest distinction between a sourced claim, a tested implementation, a mathematically proved result and an unknown or contradicted assertion. A missing source, invalid identity, contradictory witness or nonreproducible test must produce a meaningful refusal—not confidence theater.
+
+We'd judge this by an independent engineer successfully reproducing a positive case, an alternate-valid source, and a deliberately broken case against the published software, under the correct licenses. We would **not** judge it by how many AI-generated explanations or badges the repository acquires.
+
+**Three ways to participate today:** inspect and challenge the [existing software](https://github.com/red-cup-engineering/proof-path-structuration-service); introduce a maintainer or investigator who deals with the problem; or [ask about underwriting this specific open milestone](https://561.group/contact/), including unrestricted patronage where you don't want any delivery rights. Smaller one-time appreciation remains available [here](https://github.com/561-group/.github/blob/main/TIPS.md). An inquiry isn't a contract or a funded grant.
+
+There are institutional funding routes worth exploring too. [Hacker Initiative's current Signal/Noise 2026 call](https://hackerinitiative.org/) explicitly welcomes open source source/provenance verification and related hacker-serving tools, with applications due **November 9, 2026** and announced award amounts of $5,000–$25,000. **We have not submitted, qualified an eligible proposal, or won any award.** Its official application and eligible-budget requirements govern, independently of voluntary patronage. [Manifund](https://manifund.org/about/open-call) separately accepts proposed public-benefit projects for donor funding subject to charitable review and grant agreements; it is not our personal Stripe checkout.
+
+The point is not to make every odd little tool into a grand venture pitch. It's to provide a *real, specific place for curiosity, criticism, engineering work and available outside resources to encounter each other*.
+
 ## Pick a frontier, not a vanity tier
 
 These are genuine *directions* anchored in existing public source. None is a prepaid service contract, fixed price quote, reserved technical deliverable, proof of a deployed product, or claim that anyone has funded us.
