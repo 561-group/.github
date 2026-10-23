@@ -38,6 +38,8 @@ The public [attention-allocation readout](https://github.com/lenticule-science/a
 
 These are **examples of published work**, not claims that every 561 Group project is public, finished, or open-licensed. Each repository's own LICENSE, documentation, upstream dependencies and governance control what can be reused. Indigenous cultural data is not automatically openly licensed.
 
+**Want to fund a frontier rather than buy equity?** [Explore four concrete open-work underwriting opportunities](UNDERWRITE-OPEN-WORK.md), from research instruments to creator-controlled commerce and independent publishing. You can support any amount, make an introduction, or discuss a substantial unrestricted gift or scoped sponsorship.
+
 ## Ways to be part of this
 
 You don't need to buy the future from us to help it exist.
