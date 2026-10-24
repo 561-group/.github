@@ -6,10 +6,11 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-**The 561 Group.** The union of the four organizations below, operated by Morgan Sennhauser.
+**The 561 Group** brings together Lenticule Science, Red Cup Engineering, Coesite Operations and Causeway Services. These four organizations investigate questions, build verifiable software, operate systems and deliver public services. The Group is operated by Morgan Sennhauser; its public record distinguishes published work, proposals and independently received outcomes.
 
-The 561 Group is operated by Morgan Sennhauser. Its work moves from science to engineering to operations to public
-services, and each step has its own organization:
+**Find the original work:** [Lenticule's published research](https://science.561.group/) · [An original formal-mathematics investigation](https://science.561.group/obsmetrologia-formal-mathematics-in-lean-4/) · [Group projects](https://561.group/projects/) · [Service inquiries](https://561.group/work/) · [Contact](https://561.group/contact/). These are ways to inspect sources and request scope, not claims of search placement, a validated scientific theorem, or accepted customer work.
+
+The Group's work moves from science to engineering to operations to public services. Each has a distinct source-owning organization:
 
 | Organization | Register | Default license |
 |---|---|---|
@@ -17,7 +18,7 @@ services, and each step has its own organization:
 | [Red Cup Engineering](https://github.com/red-cup-engineering) | Engineering: makes the actual components, their composition boundaries, build inputs, tests and demonstrations independently reproducible. | MIT |
 | [Coesite Operations](https://github.com/coesite-operations) | Operations: runs what engineering builds, and releases truthful runbooks, limits, hazards and recovery procedures. | Apache-2.0 |
 | [Causeway Services](https://github.com/causeway-services) | Public services: gives people usable free-software rights and practical ways to learn, operate, challenge, contribute and benefit. | Apache-2.0 |
-| [561 Group](https://github.com/561-group) | The union of the four organizations below, operated by Morgan Sennhauser. | 561 Group Repository License 1.0 (all rights reserved) |
+| [561 Group](https://github.com/561-group) | Coordinates the four organizations above and maintains the institution's corporate source and public entry points. | 561 Group Repository License 1.0 (all rights reserved) |
 
 **Start with the work:** [The future doesn't need another cap table — four public projects, their source, and ways to participate](https://github.com/561-group/.github/blob/main/OPEN-WORK.md). No venture pitch or paywall required. The project links lead to real code and research; readers can support it without buying ownership.
 
