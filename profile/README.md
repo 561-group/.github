@@ -6,10 +6,11 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-**The 561 Group.** The union of the four organizations below, operated by Morgan Sennhauser.
+**The 561 Group** brings together Lenticule Science, Red Cup Engineering, Coesite Operations and Causeway Services. These four organizations investigate questions, build verifiable software, operate systems and deliver public services. The Group is operated by Morgan Sennhauser; its public record distinguishes published work, proposals and independently received outcomes.
 
-The 561 Group is operated by Morgan Sennhauser. Its work moves from science to engineering to operations to public
-services, and each step has its own organization:
+**Find the original work:** [Lenticule's published research](https://science.561.group/) · [An original formal-mathematics investigation](https://science.561.group/obsmetrologia-formal-mathematics-in-lean-4/) · [Group projects](https://561.group/projects/) · [Service inquiries](https://561.group/work/) · [Contact](https://561.group/contact/). These are ways to inspect sources and request scope, not claims of search placement, a validated scientific theorem, or accepted customer work.
+
+The Group's work moves from science to engineering to operations to public services. Each has a distinct source-owning organization:
 
 | Organization | Register | Default license |
 |---|---|---|
@@ -17,7 +18,7 @@ services, and each step has its own organization:
 | [Red Cup Engineering](https://github.com/red-cup-engineering) | Engineering: makes the actual components, their composition boundaries, build inputs, tests and demonstrations independently reproducible. | MIT |
 | [Coesite Operations](https://github.com/coesite-operations) | Operations: runs what engineering builds, and releases truthful runbooks, limits, hazards and recovery procedures. | Apache-2.0 |
 | [Causeway Services](https://github.com/causeway-services) | Public services: gives people usable free-software rights and practical ways to learn, operate, challenge, contribute and benefit. | Apache-2.0 |
-| [561 Group](https://github.com/561-group) | The union of the four organizations below, operated by Morgan Sennhauser. | 561 Group Repository License 1.0 (all rights reserved) |
+| [561 Group](https://github.com/561-group) | Coordinates the four organizations above and maintains the institution's corporate source and public entry points. | 561 Group Repository License 1.0 (all rights reserved) |
 
 **Start with the work:** [The future doesn't need another cap table — four public projects, their source, and ways to participate](https://github.com/561-group/.github/blob/main/OPEN-WORK.md). No venture pitch or paywall required. The project links lead to real code and research; readers can support it without buying ownership.
 
@@ -29,7 +30,7 @@ We're recruiting the **first two independent seller pilots** for Bazaar: real cr
 
 ## Ways to participate economically
 
-**Appreciate already-published open work:** [Send a one-time tip of your own choosing](https://buy.stripe.com/9B68wQ9HA50ub2Yen25EY04) ($5–$10,000, $250 suggested). We publish real software and research before asking: [a public Lean formal-methods library](https://github.com/lenticule-science/hoare-program-carrier), [open-source storefront components](https://github.com/red-cup-engineering/digital-goods-storefront-engineering-services-section), and [this Group's source-owned Shop](https://github.com/causeway-services/shop.561.group). The legal Stripe merchant is emsenn; a tip purchases no new work, equity, influence or charitable tax deduction. Billing questions go directly to [emsenn@561.group](mailto:emsenn@561.group?subject=Open%20work%20tip%20billing%20question), not an unverified Shop route. [See all tipping options](https://github.com/561-group/.github/blob/main/TIPS.md).
+**Appreciate already-published open work:** [Send a one-time tip of your own choosing](https://buy.stripe.com/9B68wQ9HA50ub2Yen25EY04) ($5–$10,000, $250 suggested). We publish real software and research before asking: [a public Lean formal-methods library](https://github.com/lenticule-science/hoare-program-carrier-science-services-section), [open-source storefront components](https://github.com/red-cup-engineering/digital-goods-storefront-engineering-services-section), and [this Group's source-owned Shop](https://github.com/causeway-services/shop.561.group). The legal Stripe merchant is emsenn; a tip purchases no new work, equity, influence or charitable tax deduction. Billing questions go directly to [emsenn@561.group](mailto:emsenn@561.group?subject=Open%20work%20tip%20billing%20question), not an unverified Shop route. [See all tipping options](https://github.com/561-group/.github/blob/main/TIPS.md).
 
 **Sustain public work:** [Support the 561 Group for $10 USD per month](https://buy.stripe.com/28E28s1b4gJcb2Y3Io5EY02). This is a voluntary recurring subscription for research and technical infrastructure, billed monthly until canceled. It does not purchase goods, special access, editorial influence or a tax-deductible charitable donation. The legal receiving seller is emsenn, as identified at checkout. For billing or cancellation help, use the Stripe receipt or email [emsenn@561.group](mailto:emsenn@561.group?subject=Monthly%20support%20billing%20question); a request is not a completed cancellation until confirmed. [One-time tips](https://github.com/561-group/.github/blob/main/TIPS.md) use a separate rail.
 
