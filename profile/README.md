@@ -24,6 +24,16 @@ The Group's work moves from science to engineering to operations to public servi
 
 **Curious patrons and large backers:** [Underwrite open work rather than own it](https://github.com/561-group/.github/blob/main/UNDERWRITE-OPEN-WORK.md). Four source-linked scientific and technical frontiers, real prospective public outcomes, and ways to help ranging from a helpful introduction to unrestricted support or a separately agreed major sponsorship. This is not a manufactured valuation or an equity raise.
 
+## Build with the 561 Group's public software and machine services
+
+**Developer entry point:** [Inspect the public source of 561.group](https://github.com/red-cup-engineering/561.group) and the [published release identity](https://561.group/source-revision.json). Browse [the Group's public projects](https://561.group/projects/) for the actual science, engineering, operations and service owners. A repository star is welcome when the source is useful, but stars are not purchases, reviews or verified adoption.
+
+**Agent entry point:** [Machine-readable services and usage](https://561.group/for-agents/) · [agent-readable summary](https://561.group/llms.txt) · [full agent-readable account](https://561.group/llms-full.txt). These public sources are for discovery, not a promise that every internal operation or repository is available to outside agents.
+
+**Pay-per-call x402:** [Explore the Causeway Market](https://market.561.group/) and [its astronomy-position offer](https://market.561.group/offers/astronomy-positions-date/). The public offer advertises machine-facing payment terms; an HTTP 402 is a payment invitation, **not** evidence that a customer bought, received or accepted a result. Published pricing and availability are determined at the seller endpoint.
+
+**Source and evidence:** The original Group website, services and public code are distinct source-owned surfaces. Treat machine summaries, README text and sale listings as projections of their original sources; verify a claimed operation or outcome against its released artifact and actual endpoint. [Request an accountable service scope](https://561.group/work/) rather than interpreting a GitHub issue, star or follow as a contract.
+
 ## Bazaar: bring your own Shop—or say what you want to buy
 
 We're recruiting the **first two independent seller pilots** for Bazaar: real creator shops, commissioned services, digital goods, and voluntary-support pages with their original payment and customer relationships preserved. [Apply as a seller](https://github.com/causeway-services/.github/issues/new?template=bazaar-seller.yml), [submit a real buying need](https://github.com/causeway-services/.github/issues/new?template=bazaar-buyer.yml), or [read the current pilot limitations](https://github.com/causeway-services/.github/blob/main/BAZAAR.md). Applications are public, free to file, and do not create a listing, sale, contract, or transfer of merchant authority.
