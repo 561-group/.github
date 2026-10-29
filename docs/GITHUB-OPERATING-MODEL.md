@@ -18,6 +18,13 @@ Classify each repository as software/library, deployed service, infrastructure/o
 
 For private repositories with exhausted hosted-runner minutes, avoid speculative retries; validate safely outside Actions when possible and retain the unavailable **hosted CI** gate. Public-repository standard hosted runners are currently free under GitHub's published billing terms, but real execution must still be checked per workflow and repository. Do not turn a source commit into a deployment receipt.
 
+### Observed runner states and original CI owners (2026-10-29)
+
+Do not collapse every red check into a quota diagnosis. The authoritative five-run sample is in [data/github-controls.json](../data/github-controls.json) under `ciObservations`. Group **internal-services-section** completed custody on a repo-scoped `self-hosted, bare-cedar-fog` runner; **Coesite Operations** completed custody on public hosted execution. By contrast, Lenticule **science-services-section** and Red Cup **signcell** had failed private-hosted jobs with **zero executed steps**. Those failures justify checking entitlement/runner eligibility, not a fictional source test failure. Historical Bare Cedar Fog release **ran** on a self-hosted runner and failed in PNPM's strict ignored-build policy during assembly; its original dependency-policy decision was separately recorded at [BCF services #595](https://github.com/561-group/561-group-bare-cedar-fog-services-section/issues/595).
+
+Recover private CI under its **existing** engineering owner: [Red Cup continuous delivery](https://github.com/red-cup-engineering/continuous-delivery-engineering-services-section) and [existing GitHub Engineering P0 #7](https://github.com/red-cup-engineering/github-engineering-services-section/issues/7), where a CircleCI Free source configuration and existing GitHub App were previously reported, but an actual private project, allowed repository selections, remaining Free quota and independent complete consumer tests are still unverified. Do not create a second runner controller, mirror private source into a public repository, spend unapproved cloud or Actions credits, or treat a hypothetical CircleCI project as an execution receipt. An organization runner grant is a separate administrative/host isolation act, not a `runs-on` string change.
+
+
 For each adoption PR: record base and head SHAs, exact changed files, local template override inventory, cross-organization compatibility, test method, an independent reviewer, and post-merge visibility in a real eligible consumer. Keep unverified or unauthorized settings separately outstanding. Roll back by reverting the affected defaults or organization-specific projection; do not delete historical issues or existing operating evidence.
 
 ## References
