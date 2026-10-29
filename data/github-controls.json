@@ -259,22 +259,41 @@
     {
       "repo": "lenticule-science/science-services-section",
       "pr": "https://github.com/lenticule-science/science-services-section/pull/386",
-      "status": "source-merged",
+      "status": "source-merged-and-local-template-absent-on-main",
       "mergeSha": "4ec02c6bb1c5f87198ced4cc4fa0dc0b1be87ce9",
       "uiChooserVerified": false,
-      "privateCiStatus": "pre-job-failure"
+      "privateCiStatus": "pre-job-failure",
+      "sourceReadback": "GitHub main checkout .github/ISSUE_TEMPLATE returned 404 after merge"
     },
     {
       "repo": "561-group/internal-services-section",
       "pr": "https://github.com/561-group/internal-services-section/pull/708",
-      "status": "in-review-at-source-capture",
-      "uiChooserVerified": false
+      "status": "source-merged-and-local-template-absent-on-main",
+      "uiChooserVerified": false,
+      "mergeSha": "2e5ee8899feeb726dd162f6dd738cf1b18c4e015",
+      "sourceReadback": "GitHub main checkout .github/ISSUE_TEMPLATE returned 404 after merge"
     },
     {
       "repo": "coesite-operations/operations-services-section",
       "pr": "https://github.com/coesite-operations/operations-services-section/pull/487",
-      "status": "in-review-at-source-capture",
-      "uiChooserVerified": false
+      "status": "source-merged-and-local-template-absent-on-main",
+      "uiChooserVerified": false,
+      "mergeSha": "fe70cb077a310aedd55021f4ed30df7a856a1c71",
+      "sourceReadback": "GitHub main checkout .github/ISSUE_TEMPLATE returned 404 after merge"
+    }
+  ],
+  "remainingLocalOverrideCases": [
+    {
+      "repo": "red-cup-engineering/561.group",
+      "observed": [
+        "service-submission.yml"
+      ],
+      "disposition": "preserve live public service intake; do not blindly retire"
+    },
+    {
+      "repo": "causeway-services/market.561.group",
+      "observed": "local issue-template override present",
+      "disposition": "inspect original buyer/seller/service owner before migration"
     }
   ]
 }
