@@ -38,7 +38,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           repository: 561-group/.github
-          ref: ${{ github.job_workflow_sha || github.sha }}
+          ref: 4d149b6bbc902a8f3d5403941dee36b586e17860
           path: .community-defaults-source
           persist-credentials: false
       - name: Qualify GitHub-native forms and controls
