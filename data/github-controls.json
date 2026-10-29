@@ -1,6 +1,6 @@
 {
   "schema": "561.github-operating-controls/v1",
-  "status": "proposed-not-enforced",
+  "status": "source-integrated-settings-unverified",
   "updated": "2026-10-29",
   "originalWork": "https://github.com/561-group/.github/issues/13",
   "owners": {
@@ -205,6 +205,95 @@
       "owner": "561-group/561-group-cold-red-gate-services-section",
       "originalIssue": "https://github.com/561-group/561-group-cold-red-gate-services-section/issues/214",
       "status": "Original release/host receiving separate from generated or public-source checks"
+    }
+  ],
+  "initialInventoryPhase": "historical-pre-adoption; observedDefaults rows and sourceHead are not live current settings",
+  "adoption": [
+    {
+      "org": "561-group",
+      "mergedMainSha": "4d149b6bbc902a8f3d5403941dee36b586e17860",
+      "sourceCheckRun": "https://github.com/561-group/.github/actions/runs/40944523320",
+      "verifierCommit": "d5a07a8791dff1a87bd0e22dd90ce3a5097da222",
+      "status": "GitHub-source-merged-and-native-check-passed",
+      "platformEnforcement": "unverified",
+      "effectiveMemberInheritance": "not-universally-verified"
+    },
+    {
+      "org": "lenticule-science",
+      "mergedMainSha": "5b31c1cd2f7b36e298263ea4ec7949aeab703011",
+      "sourceCheckRun": "https://github.com/lenticule-science/.github/actions/runs/40944733273",
+      "verifierCommit": "d5a07a8791dff1a87bd0e22dd90ce3a5097da222",
+      "status": "GitHub-source-merged-and-native-check-passed",
+      "platformEnforcement": "unverified",
+      "effectiveMemberInheritance": "not-universally-verified"
+    },
+    {
+      "org": "red-cup-engineering",
+      "mergedMainSha": "d4cb5f87dcb91272d25908df088bad3331ee1653",
+      "sourceCheckRun": "https://github.com/red-cup-engineering/.github/actions/runs/40944744876",
+      "verifierCommit": "d5a07a8791dff1a87bd0e22dd90ce3a5097da222",
+      "status": "GitHub-source-merged-and-native-check-passed",
+      "platformEnforcement": "unverified",
+      "effectiveMemberInheritance": "not-universally-verified"
+    },
+    {
+      "org": "coesite-operations",
+      "mergedMainSha": "416fbfabf909d29bd7e9762eb769a2f51aadc64a",
+      "sourceCheckRun": "https://github.com/coesite-operations/.github/actions/runs/40944754733",
+      "verifierCommit": "d5a07a8791dff1a87bd0e22dd90ce3a5097da222",
+      "status": "GitHub-source-merged-and-native-check-passed",
+      "platformEnforcement": "unverified",
+      "effectiveMemberInheritance": "not-universally-verified"
+    },
+    {
+      "org": "causeway-services",
+      "mergedMainSha": "2d4d261aebcf4de26084c6a59cdd74ef03820c01",
+      "sourceCheckRun": "https://github.com/causeway-services/.github/actions/runs/40944764558",
+      "verifierCommit": "d5a07a8791dff1a87bd0e22dd90ce3a5097da222",
+      "status": "GitHub-source-merged-and-native-check-passed",
+      "platformEnforcement": "unverified",
+      "effectiveMemberInheritance": "not-universally-verified"
+    }
+  ],
+  "localOverrideReceiving": [
+    {
+      "repo": "lenticule-science/science-services-section",
+      "pr": "https://github.com/lenticule-science/science-services-section/pull/386",
+      "status": "source-merged-and-local-template-absent-on-main",
+      "mergeSha": "4ec02c6bb1c5f87198ced4cc4fa0dc0b1be87ce9",
+      "uiChooserVerified": false,
+      "privateCiStatus": "pre-job-failure",
+      "sourceReadback": "GitHub main checkout .github/ISSUE_TEMPLATE returned 404 after merge"
+    },
+    {
+      "repo": "561-group/internal-services-section",
+      "pr": "https://github.com/561-group/internal-services-section/pull/708",
+      "status": "source-merged-and-local-template-absent-on-main",
+      "uiChooserVerified": false,
+      "mergeSha": "2e5ee8899feeb726dd162f6dd738cf1b18c4e015",
+      "sourceReadback": "GitHub main checkout .github/ISSUE_TEMPLATE returned 404 after merge"
+    },
+    {
+      "repo": "coesite-operations/operations-services-section",
+      "pr": "https://github.com/coesite-operations/operations-services-section/pull/487",
+      "status": "source-merged-and-local-template-absent-on-main",
+      "uiChooserVerified": false,
+      "mergeSha": "fe70cb077a310aedd55021f4ed30df7a856a1c71",
+      "sourceReadback": "GitHub main checkout .github/ISSUE_TEMPLATE returned 404 after merge"
+    }
+  ],
+  "remainingLocalOverrideCases": [
+    {
+      "repo": "red-cup-engineering/561.group",
+      "observed": [
+        "service-submission.yml"
+      ],
+      "disposition": "preserve live public service intake; do not blindly retire"
+    },
+    {
+      "repo": "causeway-services/market.561.group",
+      "observed": "local issue-template override present",
+      "disposition": "inspect original buyer/seller/service owner before migration"
     }
   ]
 }

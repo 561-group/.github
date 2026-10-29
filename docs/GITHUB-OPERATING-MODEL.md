@@ -1,8 +1,14 @@
-# GitHub operating model — proposed source for five organizations
+# GitHub operating model — source-integrated five-organization defaults
 
-**Original work:** [561 Group .github #13](https://github.com/561-group/.github/issues/13). **Source owner:** 561 Group. **Status (2026-10-29):** implementation proposal, **not** an organization-wide enforced setting, approved rule, or proof of CI or consumer receiving.
+**Original work:** [561 Group .github #13](https://github.com/561-group/.github/issues/13). **Source owner:** 561 Group. **Status (2026-10-29):** all five original `.github` publishers have merged native contributor defaults and passed real source checks. Organization settings, effective downstream issue choosers, protected branches, security controls, and private software CI remain **separate and unverified**.
 
 The source-owned control register is [data/github-controls.json](../data/github-controls.json). The register distinguishes a normative upstream clause, a proposed local control, verification evidence, and unknown or unimplemented settings. Each actual organization's `.github` remains its GitHub-native default publisher; copying files cannot configure org-level issue types, security features, permissions, runner policies, Projects, rulesets, or code owners.
+
+## Verified source adoption (2026-10-29)
+
+The exact merged source and post-merge native GitHub Actions receipts are machine-readable in [data/github-controls.json](../data/github-controls.json) under `adoption`. All five public organization publishers have the expected forms and reusable workflow; each post-merge Actions run succeeded. Coesite's original operations-custody also succeeded and the Newswire/seller workflows remain unchanged. This is source and workflow receiving, **not** independent human review, runtime security configuration, private runner recovery, effective issue chooser acceptance, or SLSA/OpenSSF certification.
+
+An original downstream member cutover removes the four identical local legacy issue forms and thereby admits GitHub's organization defaults; [Lenticule science #386](https://github.com/lenticule-science/science-services-section/pull/386) is the first source-merged case. The three original member repositories (Lenticule Science science-services-section #386, Group internal-services-section #708, and Coesite operations-services-section #487) have each now merged the same four-deletion cutover, and GitHub readback confirms their local form directory is absent on `main`. Effective private issue-chooser rendering remains unobserved. Other service-specific overrides, including Red Cup's `561.group` submission route, remain intentionally intact. Historic issues and Git evidence are preserved. Local overrides in other repos need case-by-case source, effect, and customer receiving; do not delete service-specific public intake without first moving its unique obligations.
 
 ## Source and boundaries
 
