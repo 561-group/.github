@@ -1,0 +1,132 @@
+{
+  "schema": "561.github-operating-controls/v1",
+  "status": "proposed-not-enforced",
+  "updated": "2026-10-29",
+  "originalWork": "https://github.com/561-group/.github/issues/13",
+  "owners": {
+    "policy": "561-group",
+    "science": "lenticule-science",
+    "engineering": "red-cup-engineering",
+    "operations": "coesite-operations",
+    "publicService": "causeway-services"
+  },
+  "baseline": {
+    "name": "OpenSSF Open Source Project Security Baseline",
+    "version": "2026.08.28",
+    "url": "https://baseline.openssf.org/versions/2026-08-28"
+  },
+  "repositoryClasses": [
+    "software-library",
+    "deployed-service",
+    "operations-infrastructure",
+    "science-research",
+    "content-data",
+    "corporate-defaults"
+  ],
+  "controls": [
+    {
+      "sourceId": "OSPS-BR-01.01",
+      "appliesWhen": "untrusted metadata enters CI",
+      "proposedControl": "Validate and quote inputs before shell or API use",
+      "owner": "red-cup-engineering",
+      "verification": "Inspect actual workflow at current SHA and execute a negative-input assay",
+      "status": "not-verified"
+    },
+    {
+      "sourceId": "OSPS-BR-01.03",
+      "appliesWhen": "CI executes untrusted code snapshots",
+      "proposedControl": "No privileged credentials or mutable production assets available to unreviewed code",
+      "owner": "red-cup-engineering",
+      "verification": "Check job/event/token permissions and exercise a fork-PR negative control",
+      "status": "not-verified"
+    },
+    {
+      "sourceId": "OSPS-AC-04.01",
+      "appliesWhen": "code project at OSPS maturity level 2 or above",
+      "proposedControl": "Set the lowest default CI permission at organization/repository where supported",
+      "owner": "561-group",
+      "verification": "Read back enabled default workflow permissions",
+      "status": "unknown-platform-settings"
+    },
+    {
+      "sourceId": "OSPS-QA-06.01",
+      "appliesWhen": "code project at OSPS maturity level 2 or above",
+      "proposedControl": "Run applicable automated test suite before protected merge",
+      "owner": "red-cup-engineering",
+      "verification": "Verified actual test job AND effective required check",
+      "status": "not-verified"
+    },
+    {
+      "sourceId": "OSPS-VM-01.01",
+      "appliesWhen": "applicable project requires a coordinated disclosure policy",
+      "proposedControl": "Publish usable vulnerability disclosure policy and response expectations",
+      "owner": "561-group",
+      "verification": "Read affected repository's effective SECURITY.md and response process",
+      "status": "partial-source-only"
+    },
+    {
+      "sourceId": "OSPS-VM-03.01",
+      "appliesWhen": "applicable project must receive vulnerabilities privately",
+      "proposedControl": "Offer private vulnerability reports or a verified private contact",
+      "owner": "561-group",
+      "verification": "Exercise affected repo private reporting route without publishing sensitive data",
+      "status": "unknown-platform-settings"
+    },
+    {
+      "sourceId": "OSPS-BR-07.01",
+      "appliesWhen": "any project uses version control",
+      "proposedControl": "Prevent accidental secrets in source",
+      "owner": "red-cup-engineering",
+      "verification": "Read enabled scanning/prevention controls, test non-sensitive canary",
+      "status": "unknown-platform-settings"
+    }
+  ],
+  "observedDefaults": [
+    {
+      "org": "561-group",
+      "publicDefaultRepo": true,
+      "forms": "absent-on-main",
+      "prTemplate": "absent-on-main",
+      "workflow": "none",
+      "sourceHead": "3b0748d72816062e10e1520553ae4f48f2c2a5a5"
+    },
+    {
+      "org": "lenticule-science",
+      "publicDefaultRepo": true,
+      "forms": "absent-on-main",
+      "prTemplate": "absent-on-main",
+      "workflow": "none",
+      "sourceHead": "cb4299541ce242afa82d7e70d700ce66a031bc60"
+    },
+    {
+      "org": "red-cup-engineering",
+      "publicDefaultRepo": true,
+      "forms": "agent-work-legacy",
+      "prTemplate": "legacy-specialized",
+      "workflow": "none",
+      "sourceHead": "777bb5109fa4c836d95fd1a587be622aa34f33d6"
+    },
+    {
+      "org": "coesite-operations",
+      "publicDefaultRepo": true,
+      "forms": "absent-on-main",
+      "prTemplate": "absent-on-main",
+      "workflow": "two-operational",
+      "sourceHead": "69261b7c31af831e6c3e9b1d00595dafa42c5dfd"
+    },
+    {
+      "org": "causeway-services",
+      "publicDefaultRepo": true,
+      "forms": "three-live-bazaar",
+      "prTemplate": "absent-on-main",
+      "workflow": "one-seller-verification",
+      "sourceHead": "2024ea7d59d0fb66fbeb01206f50b2a3440399e2"
+    }
+  ],
+  "blockedOrUnknown": [
+    "Private-repo Actions minutes are exhausted per original issue update; per-org quotas and runner status require authorized billing readback",
+    "Branch protections require repository administration access and are not verified by this GitHub connection",
+    "Org issue types, custom properties, Actions default permissions, security configurations, Projects and rulesets not yet verified",
+    "Local overrides must be inventoried repository-by-repository before claiming default inheritance"
+  ]
+}
