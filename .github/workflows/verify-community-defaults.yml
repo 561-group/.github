@@ -1,0 +1,45 @@
+name: Verify GitHub community defaults
+on:
+  pull_request:
+    paths:
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
+      - '.github/workflows/verify-community-defaults.yml'
+      - 'scripts/verify-community-defaults.rb'
+      - 'CONTRIBUTING.md'
+      - 'SECURITY.md'
+      - 'SUPPORT.md'
+      - 'data/github-controls.json'
+  push:
+    branches: [main]
+    paths:
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
+      - '.github/workflows/verify-community-defaults.yml'
+      - 'scripts/verify-community-defaults.rb'
+      - 'CONTRIBUTING.md'
+      - 'SECURITY.md'
+      - 'SUPPORT.md'
+      - 'data/github-controls.json'
+  workflow_call:
+permissions:
+  contents: read
+concurrency:
+  group: community-defaults-${{ github.repository }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: 561-group/.github
+          ref: ${{ github.job_workflow_sha || github.sha }}
+          path: .community-defaults-source
+          persist-credentials: false
+      - name: Qualify GitHub-native forms and controls
+        run: ruby .community-defaults-source/scripts/verify-community-defaults.rb .

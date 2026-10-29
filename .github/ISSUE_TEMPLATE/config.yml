@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "Security and private reporting"
+    url: "https://561.group/contact/"
+    about: "For vulnerabilities, first use the affected repository's Security tab / Report a vulnerability if available. Otherwise contact the Group; never disclose a vulnerability in a public issue."
+  - name: "Support, business, or service inquiries"
+    url: "https://561.group/contact/"
+    about: "Use the service contact route for help and commercial requests rather than creating an unrelated engineering issue."

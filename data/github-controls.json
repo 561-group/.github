@@ -1,0 +1,210 @@
+{
+  "schema": "561.github-operating-controls/v1",
+  "status": "proposed-not-enforced",
+  "updated": "2026-10-29",
+  "originalWork": "https://github.com/561-group/.github/issues/13",
+  "owners": {
+    "policy": "561-group",
+    "science": "lenticule-science",
+    "engineering": "red-cup-engineering",
+    "operations": "coesite-operations",
+    "publicService": "causeway-services"
+  },
+  "baseline": {
+    "name": "OpenSSF Open Source Project Security Baseline",
+    "version": "2026.08.28",
+    "url": "https://baseline.openssf.org/versions/2026-08-28"
+  },
+  "repositoryClasses": [
+    "software-library",
+    "deployed-service",
+    "operations-infrastructure",
+    "science-research",
+    "content-data",
+    "corporate-defaults"
+  ],
+  "controls": [
+    {
+      "sourceId": "OSPS-BR-01.01",
+      "appliesWhen": "untrusted metadata enters CI",
+      "proposedControl": "Validate and quote inputs before shell or API use",
+      "owner": "red-cup-engineering",
+      "verification": "Inspect actual workflow at current SHA and execute a negative-input assay",
+      "status": "not-verified"
+    },
+    {
+      "sourceId": "OSPS-BR-01.03",
+      "appliesWhen": "CI executes untrusted code snapshots",
+      "proposedControl": "No privileged credentials or mutable production assets available to unreviewed code",
+      "owner": "red-cup-engineering",
+      "verification": "Check job/event/token permissions and exercise a fork-PR negative control",
+      "status": "not-verified"
+    },
+    {
+      "sourceId": "OSPS-AC-04.01",
+      "appliesWhen": "code project at OSPS maturity level 2 or above",
+      "proposedControl": "Set the lowest default CI permission at organization/repository where supported",
+      "owner": "561-group",
+      "verification": "Read back enabled default workflow permissions",
+      "status": "unknown-platform-settings"
+    },
+    {
+      "sourceId": "OSPS-QA-06.01",
+      "appliesWhen": "code project at OSPS maturity level 2 or above",
+      "proposedControl": "Run applicable automated test suite before protected merge",
+      "owner": "red-cup-engineering",
+      "verification": "Verified actual test job AND effective required check",
+      "status": "not-verified"
+    },
+    {
+      "sourceId": "OSPS-VM-01.01",
+      "appliesWhen": "applicable project requires a coordinated disclosure policy",
+      "proposedControl": "Publish usable vulnerability disclosure policy and response expectations",
+      "owner": "561-group",
+      "verification": "Read affected repository's effective SECURITY.md and response process",
+      "status": "partial-source-only"
+    },
+    {
+      "sourceId": "OSPS-VM-03.01",
+      "appliesWhen": "applicable project must receive vulnerabilities privately",
+      "proposedControl": "Offer private vulnerability reports or a verified private contact",
+      "owner": "561-group",
+      "verification": "Exercise affected repo private reporting route without publishing sensitive data",
+      "status": "unknown-platform-settings"
+    },
+    {
+      "sourceId": "OSPS-BR-07.01",
+      "appliesWhen": "any project uses version control",
+      "proposedControl": "Prevent accidental secrets in source",
+      "owner": "red-cup-engineering",
+      "verification": "Read enabled scanning/prevention controls, test non-sensitive canary",
+      "status": "unknown-platform-settings"
+    }
+  ],
+  "observedDefaults": [
+    {
+      "org": "561-group",
+      "publicDefaultRepo": true,
+      "forms": "absent-on-main",
+      "prTemplate": "absent-on-main",
+      "workflow": "none",
+      "sourceHead": "3b0748d72816062e10e1520553ae4f48f2c2a5a5"
+    },
+    {
+      "org": "lenticule-science",
+      "publicDefaultRepo": true,
+      "forms": "absent-on-main",
+      "prTemplate": "absent-on-main",
+      "workflow": "none",
+      "sourceHead": "cb4299541ce242afa82d7e70d700ce66a031bc60"
+    },
+    {
+      "org": "red-cup-engineering",
+      "publicDefaultRepo": true,
+      "forms": "agent-work-legacy",
+      "prTemplate": "legacy-specialized",
+      "workflow": "none",
+      "sourceHead": "777bb5109fa4c836d95fd1a587be622aa34f33d6"
+    },
+    {
+      "org": "coesite-operations",
+      "publicDefaultRepo": true,
+      "forms": "absent-on-main",
+      "prTemplate": "absent-on-main",
+      "workflow": "two-operational",
+      "sourceHead": "69261b7c31af831e6c3e9b1d00595dafa42c5dfd"
+    },
+    {
+      "org": "causeway-services",
+      "publicDefaultRepo": true,
+      "forms": "three-live-bazaar",
+      "prTemplate": "absent-on-main",
+      "workflow": "one-seller-verification",
+      "sourceHead": "2024ea7d59d0fb66fbeb01206f50b2a3440399e2"
+    }
+  ],
+  "blockedOrUnknown": [
+    "Org-specific paid GitHub-hosted private Actions capacity, available runner groups and effective policies require per-organization authorized readback; no-step failure is not a confirmed quota diagnosis",
+    "Private CircleCI GitHub App integration is source-defined but native project, GitHub App repository grants, Free balance and actual source/job receiving remain unverified; existing original Red Cup issue #7",
+    "Corporate GitHub branch protections require repository administration read authority; current GitHub app returned 403",
+    "Organization-level issue types, branch rules, default Actions token permissions, security scanning and native operational receiving are not verified",
+    "Local issue-template overrides must be inventoried before claiming default inheritance"
+  ],
+  "ciObservations": [
+    {
+      "repo": "561-group/internal-services-section",
+      "visibility": "private",
+      "sourceRun": "https://github.com/561-group/internal-services-section/actions/runs/40939840586",
+      "observed": "2026-10-29",
+      "workflow": "section-custody",
+      "runnerSelector": [
+        "self-hosted",
+        "bare-cedar-fog"
+      ],
+      "jobStatus": "success",
+      "stepsExecuted": true,
+      "interpretation": "Working repo-scoped self-hosted path; does not prove other private organizations have that runner"
+    },
+    {
+      "repo": "coesite-operations/.github",
+      "visibility": "public",
+      "sourceRun": "https://github.com/coesite-operations/.github/actions/runs/40939894798",
+      "observed": "2026-10-29",
+      "workflow": "operations-custody",
+      "runnerSelector": "ubuntu-latest",
+      "jobStatus": "success",
+      "stepsExecuted": true,
+      "interpretation": "Actual source PR check succeeded; does not verify GitHub template rendering"
+    },
+    {
+      "repo": "lenticule-science/science-services-section",
+      "visibility": "private",
+      "sourceRun": "https://github.com/lenticule-science/science-services-section/actions/runs/40938940422",
+      "observed": "2026-10-29",
+      "workflow": "section-custody",
+      "runnerSelector": "ubuntu-latest",
+      "jobStatus": "failure",
+      "stepsExecuted": false,
+      "interpretation": "Failure before job steps; billing/runner allocation/policy cause unverified"
+    },
+    {
+      "repo": "red-cup-engineering/signcell",
+      "visibility": "private",
+      "sourceRun": "https://github.com/red-cup-engineering/signcell/actions/runs/40825931467",
+      "observed": "2026-10-29",
+      "workflow": "signcell-native.yml",
+      "runnerSelector": "ubuntu-latest",
+      "jobStatus": "failure",
+      "stepsExecuted": false,
+      "interpretation": "Failure before job steps; billing/runner allocation/policy cause unverified"
+    },
+    {
+      "repo": "561-group/bare-cedar-fog",
+      "visibility": "private",
+      "sourceRun": "https://github.com/561-group/bare-cedar-fog/actions/runs/40471347679",
+      "observed": "2026-10-27",
+      "workflow": "release-cold-red-gate.yml",
+      "runnerSelector": "repository self-hosted historical release",
+      "jobStatus": "failure",
+      "stepsExecuted": true,
+      "interpretation": "Assemble failed with ERR_PNPM_IGNORED_BUILDS; existing original PNPM decision issue #595 closed. Do not conflate with no-step runner failure",
+      "existingOwner": "https://github.com/561-group/561-group-bare-cedar-fog-services-section/issues/595"
+    }
+  ],
+  "existingCiOwnership": [
+    {
+      "owner": "red-cup-engineering/continuous-delivery-engineering-services-section",
+      "purpose": "Reusable CI, source-selected CircleCI, runners, release-and-placement engineering"
+    },
+    {
+      "owner": "red-cup-engineering/github-engineering-services-section",
+      "originalIssue": "https://github.com/red-cup-engineering/github-engineering-services-section/issues/7",
+      "status": "CircleCI account and GitHub App reported installed; private project execution/Free capacity not independently received"
+    },
+    {
+      "owner": "561-group/561-group-cold-red-gate-services-section",
+      "originalIssue": "https://github.com/561-group/561-group-cold-red-gate-services-section/issues/214",
+      "status": "Original release/host receiving separate from generated or public-source checks"
+    }
+  ]
+}
