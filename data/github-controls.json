@@ -124,9 +124,87 @@
     }
   ],
   "blockedOrUnknown": [
-    "Private-repo Actions minutes are exhausted per original issue update; per-org quotas and runner status require authorized billing readback",
-    "Branch protections require repository administration access and are not verified by this GitHub connection",
-    "Org issue types, custom properties, Actions default permissions, security configurations, Projects and rulesets not yet verified",
-    "Local overrides must be inventoried repository-by-repository before claiming default inheritance"
+    "Org-specific paid GitHub-hosted private Actions capacity, available runner groups and effective policies require per-organization authorized readback; no-step failure is not a confirmed quota diagnosis",
+    "Private CircleCI GitHub App integration is source-defined but native project, GitHub App repository grants, Free balance and actual source/job receiving remain unverified; existing original Red Cup issue #7",
+    "Corporate GitHub branch protections require repository administration read authority; current GitHub app returned 403",
+    "Organization-level issue types, branch rules, default Actions token permissions, security scanning and native operational receiving are not verified",
+    "Local issue-template overrides must be inventoried before claiming default inheritance"
+  ],
+  "ciObservations": [
+    {
+      "repo": "561-group/internal-services-section",
+      "visibility": "private",
+      "sourceRun": "https://github.com/561-group/internal-services-section/actions/runs/40939840586",
+      "observed": "2026-10-29",
+      "workflow": "section-custody",
+      "runnerSelector": [
+        "self-hosted",
+        "bare-cedar-fog"
+      ],
+      "jobStatus": "success",
+      "stepsExecuted": true,
+      "interpretation": "Working repo-scoped self-hosted path; does not prove other private organizations have that runner"
+    },
+    {
+      "repo": "coesite-operations/.github",
+      "visibility": "public",
+      "sourceRun": "https://github.com/coesite-operations/.github/actions/runs/40939894798",
+      "observed": "2026-10-29",
+      "workflow": "operations-custody",
+      "runnerSelector": "ubuntu-latest",
+      "jobStatus": "success",
+      "stepsExecuted": true,
+      "interpretation": "Actual source PR check succeeded; does not verify GitHub template rendering"
+    },
+    {
+      "repo": "lenticule-science/science-services-section",
+      "visibility": "private",
+      "sourceRun": "https://github.com/lenticule-science/science-services-section/actions/runs/40938940422",
+      "observed": "2026-10-29",
+      "workflow": "section-custody",
+      "runnerSelector": "ubuntu-latest",
+      "jobStatus": "failure",
+      "stepsExecuted": false,
+      "interpretation": "Failure before job steps; billing/runner allocation/policy cause unverified"
+    },
+    {
+      "repo": "red-cup-engineering/signcell",
+      "visibility": "private",
+      "sourceRun": "https://github.com/red-cup-engineering/signcell/actions/runs/40825931467",
+      "observed": "2026-10-29",
+      "workflow": "signcell-native.yml",
+      "runnerSelector": "ubuntu-latest",
+      "jobStatus": "failure",
+      "stepsExecuted": false,
+      "interpretation": "Failure before job steps; billing/runner allocation/policy cause unverified"
+    },
+    {
+      "repo": "561-group/bare-cedar-fog",
+      "visibility": "private",
+      "sourceRun": "https://github.com/561-group/bare-cedar-fog/actions/runs/40471347679",
+      "observed": "2026-10-27",
+      "workflow": "release-cold-red-gate.yml",
+      "runnerSelector": "repository self-hosted historical release",
+      "jobStatus": "failure",
+      "stepsExecuted": true,
+      "interpretation": "Assemble failed with ERR_PNPM_IGNORED_BUILDS; existing original PNPM decision issue #595 closed. Do not conflate with no-step runner failure",
+      "existingOwner": "https://github.com/561-group/561-group-bare-cedar-fog-services-section/issues/595"
+    }
+  ],
+  "existingCiOwnership": [
+    {
+      "owner": "red-cup-engineering/continuous-delivery-engineering-services-section",
+      "purpose": "Reusable CI, source-selected CircleCI, runners, release-and-placement engineering"
+    },
+    {
+      "owner": "red-cup-engineering/github-engineering-services-section",
+      "originalIssue": "https://github.com/red-cup-engineering/github-engineering-services-section/issues/7",
+      "status": "CircleCI account and GitHub App reported installed; private project execution/Free capacity not independently received"
+    },
+    {
+      "owner": "561-group/561-group-cold-red-gate-services-section",
+      "originalIssue": "https://github.com/561-group/561-group-cold-red-gate-services-section/issues/214",
+      "status": "Original release/host receiving separate from generated or public-source checks"
+    }
   ]
 }
