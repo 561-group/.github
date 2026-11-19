@@ -132,7 +132,7 @@
   ],
   "ciObservations": [
     {
-      "repo": "561-group/internal-services-section",
+      "repo": "561-group/561-group-services-section",
       "visibility": "private",
       "sourceRun": "https://github.com/561-group/561-group-services-section/actions/runs/40939840586",
       "observed": "2026-10-29",
@@ -266,7 +266,7 @@
       "sourceReadback": "GitHub main checkout .github/ISSUE_TEMPLATE returned 404 after merge"
     },
     {
-      "repo": "561-group/internal-services-section",
+      "repo": "561-group/561-group-services-section",
       "pr": "https://github.com/561-group/561-group-services-section/pull/708",
       "status": "source-merged-and-local-template-absent-on-main",
       "uiChooserVerified": false,
