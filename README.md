@@ -6,3 +6,5 @@
 [![Indigenous data: CARE](https://img.shields.io/badge/Indigenous%20data-CARE-4b6f44)](https://github.com/561-group/.github/blob/main/GOVERNANCE.md)
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
+
+The 561 Group's organization profile and the default community health files for its repositories.
