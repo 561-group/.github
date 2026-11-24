@@ -1,0 +1,35 @@
+name: "Maintainer task"
+description: "Record bounded, accepted repository work (maintainers)"
+title: "[Task] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use this for accepted engineering or operational work. Link existing issues and source records rather than opening duplicate tasks. Filing this form does not grant permissions or admit work into the Group's institutional runtime."
+  - type: textarea
+    id: existing
+    attributes:
+      label: "Existing issue, requirement, or decision"
+      description: "Link the original work if one exists, or explain why this is new."
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: "Bounded change and responsible repository"
+      description: "Describe what needs changing and where it belongs."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "How will the result be verified?"
+      description: "Name observable acceptance and any distinct deployment or operating recipient."
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: "Dependencies, risks, and rollback"
+      description: "Add relevant context, unresolved decisions, or blocked dependencies."
+    validations:
+      required: false

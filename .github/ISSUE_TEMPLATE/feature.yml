@@ -1,0 +1,28 @@
+name: "Feature request"
+description: "Describe a need or improvement, without requiring internal terminology"
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: "You can write in any language. You do not need a design, implementation plan, or internal Work identifier to suggest an improvement."
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem or need are you trying to address?"
+      description: "Describe the situation from your perspective."
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: "What would a useful result look like?"
+      description: "Explain the outcome you need, not necessarily a particular implementation."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Who benefits, and what else should we consider?"
+      description: "Optional context, accessibility needs, alternatives, or supporting links."
+    validations:
+      required: false

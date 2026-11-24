@@ -1,0 +1,43 @@
+name: "Bug report"
+description: "Tell us about something that is not working as expected"
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Report in the language and format available to you. Screenshots and logs are optional. Do not post credentials, personal information, or security vulnerabilities publicly; use the affected repository's Security tab or private contact instead."
+  - type: textarea
+    id: actual
+    attributes:
+      label: "What happened?"
+      description: "Describe the problem and what you observed."
+      placeholder: "The feature or service did ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "What should have happened?"
+      description: "Describe the expected behavior or result."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "How can we reproduce it?"
+      description: "Steps, a small example, or a link if available. Leave blank if you cannot reproduce it."
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: "Version or environment"
+      description: "Release, URL, operating system, or relevant context, if known."
+    validations:
+      required: false
+  - type: textarea
+    id: impact
+    attributes:
+      label: "Impact or additional context"
+      description: "Who is affected? You can attach accessible evidence without sensitive information."
+    validations:
+      required: false
